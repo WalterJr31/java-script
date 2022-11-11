@@ -86,3 +86,32 @@ console.log(10 > 3 && 10 > 15 && 10 > 8)
 console.log(10>3 || 10>15 || 10>8) // Operador OU(OR) - com operador OU apenas uma expressão precisa ser verdadeira para o resultado ser verdadeiro
 
 console.log(!10>3) // Operador NÃO(NOT) - o operador NOT inverte o resultado da expressão, se for verdadeiro ele inverte para falso e se for falso ele inverte para verdadeiro 
+
+//alert("Olá mundo")
+//document.write("<h3>Olá mundo</h3>")
+
+
+function Verde(){
+//inserir um valor em um elemento da página 
+
+document.getElementById('titulo').innerHTML = 'Aula 02 de JS'
+document.getElementById('texto').innerHTML = 'Vamos estudar interação com o DOM'
+
+document.body.style.backgroundColor='green'
+document.body.style.color = 'white'
+
+document.getElementById('titulo').style.color = 'yellow'
+
+//pegar o valor de um elemento da página 
+
+let titulo = document.getElementById('titulo').innerHTML 
+
+console.log(titulo)
+}
+
+function Preto(){
+    document.body.style.backgroundColor = 'black'
+    document.body.style.color = 'lightblue'
+}
+
+Preto()
